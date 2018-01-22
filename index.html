@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <title>Shaping Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h2>Square</h2>
+        <form action="" method="get">
+            <p id="prompt">Input side length:</p>
+            <input type="number" min="0" max="600" name="message" id="MsgSquare">
+        </form>
+        <button id="SquButton">Insert</button>
+    </div>
+    <div>
+        <h2>Rectangle</h2>
+        <form action="" method="get">
+            <p id="prompt">Input side length:</p>
+            <input type="number" min="0" max="600" name="message" id="MsgRectangle-side1">
+            <p id="prompt">Input side width:</p>
+            <input type="number" min="0" max="600" name="message" id="MsgRectangle-side2">
+        </form>
+        <button id="RecButton">Insert</button>
+    </div>
+    <div>
+        <h2>Circle</h2>
+        <form action="" method="get">
+            <p id="prompt">Input width:</p>
+            <input type="number" min="0" max="600" name="message" id="MsgCircle">
+        </form>
+        <button id="CirButton">Insert</button>
+    </div>
+    <div>
+        <h2>Triangle</h2>
+        <form action="" method="get">
+            <p id="prompt">Input side length:</p>
+            <input type="number" min="0" max="600" name="message" id="MsgTriangle">
+        </form>
+        <button id="TriButton">Insert</button>
+    </div>
+
+    <container>
+        <div id="canvas"></div>
+    </container>
+
+    <div id="info">
+        <p id="ShapeName">Shape Name: </p>
+        <p id="Width">Shape Width:</p>
+        <p id="Height">Shape Height:</p>
+        <p id="Radius">Shape Radius:</p>
+        <p id="Area">Shape Area:</p>
+        <p id="Perimeter">Shape Perimeter:</p>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
